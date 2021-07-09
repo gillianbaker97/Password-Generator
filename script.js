@@ -5,10 +5,10 @@ var set = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&
 var length = 10;
 var newstring = ''
 
-function generatePassword(10, set) {
+function generatePassword(length=10) {
   for (var i = 0; i <length; i++) {
-  var floor = Math.floor(Math.random() * set.length);
-  newstring += set1.substring(floor, floor+1);
+  var floor = Math.floor(Math.random() * set.length));
+  newstring += set.substring(floor, floor+1);
 }
   return newstring;
 }
