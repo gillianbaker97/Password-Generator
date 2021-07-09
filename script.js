@@ -2,11 +2,11 @@
 var generateBtn = document.querySelector("#generate");
 
 var set = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
-var length = 10;
-var newstring = ''
+var length = 3;
+var newstring = '';
 
-function generatePassword(length=10) {
-  for (var i = 0; i <length; i++) {
+function generatePassword(length=3) {
+  for (var i = 0; i <= length; i++) {
   var floor = Math.floor(Math.random() * set.length);
   newstring += set.substring(floor, floor+1);
 }
