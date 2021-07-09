@@ -7,13 +7,13 @@ var newstring = ''
 
 function generatePassword(length=10) {
   for (var i = 0; i <length; i++) {
-  var floor = Math.floor(Math.random() * set.length));
+  var floor = Math.floor(Math.random() * set.length);
   newstring += set.substring(floor, floor+1);
 }
   return newstring;
 }
 
-document.getElementById("newstring2") = newstring;
+/* document.getElementById("newstring2") = newstring; */
 
 
 // Write password to the #password input
