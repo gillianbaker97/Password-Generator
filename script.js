@@ -11,7 +11,9 @@ function generatePassword(length=3) {
   newstring += set.substring(floor, floor+1);
 }
   return newstring;
+  return math.resize(newstring, 8);
 }
+
 
 /* document.getElementById("newstring2") = newstring; */
 
