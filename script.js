@@ -7,7 +7,7 @@ var newstring = ''
 
 function generatePassword(10, set) {
   for (var i = 0; i <length; i++) {
-  var floor = Math.floor(Math.random() * (set1.length + set2.length + set3.length));
+  var floor = Math.floor(Math.random() * set.length);
   newstring += set1.substring(floor, floor+1);
 }
   return newstring;
